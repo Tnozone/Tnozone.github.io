@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: source-sans-pro;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/SourceSansPro-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/SourceSansPro-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/SourceSansPro-Light.otf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/SourceSansPro-Semibold.otf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/SourceSansPro-It.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/SourceSansPro-BlackIt.otf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/SourceSansPro-LightIt.otf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/SourceSansPro-SemiboldIt.otf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+.header {
+    background: none;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.header-row .navigation a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 30px;
+}
+
+.banner {
+    color: #FFF;
+}
+
+.banner-title {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.banner-title h1 {
+    font-size: 120px;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.banner-title p {
+    font-size: 16px;
+    font-weight: bold;
+    word-spacing: 60px;
+    margin-top: 0;
+}
+
+.pros {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.pros h2 {
+    font-size: 32px;
+    font-weight: 300;
+    padding-top: 70px;
+}
+
+.emphasis {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.pros .people {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.pros .people .people-container {
+    margin: 20px;
+}
+
+.people-container h3, .people-container img, .people-container p {
+    display: block;
+}
+
+.pros .people h3 {
+    font-size: 18px;
+    margin: 0.45rem 0;
+    font-weight: 900;
+}
+
+.pros .people p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.quote {
+    background-color: #C271FF;
+    color:#FFF;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 105px 0;
+}
+
+.quote .quote-container {
+    display: flex;
+    align-items: center;
+}
+
+blockquote {
+    margin-top: 10px;
+    width: 730px;
+}
+
+.author, .profession {
+    margin-left: 40px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.quote-text .profession {
+    font-style: italic;
+}
+
+.video {
+    padding-bottom: 30px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.video h1 {
+    font-weight: 300;
+    font-size: 32px;
+    margin: 80px 0;
+}
+
+.video .video-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.review {
+    max-width: 255px;
+}
+
+.review h2, .review p, .reviewer, .review-rating {
+    padding: 0 10px;
+}
+
+.review h2 {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.review p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.reviewer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 600;
+}
+
+.reviewer img {
+    height: 30px;
+    width: auto;
+}
+
+.reviewer h3 {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.review-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.stars img {
+    margin: 0 3px;
+}
+
+.review .reviewer h3, .review .review-rating p {
+    color: #C271FF;
+}
+
+.membership {
+    background-color: #071629;
+    color:#FFF;
+    height: 502px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.membership h1 {
+    font-weight: 300;
+    font-size: 32px;
+    padding-top: 50px;
+}
+
+.membership .membership-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.member {
+    width: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+    padding-bottom: 40px;
+}
+
+.member h2 {
+    font-size: 18px;
+}
+
+.member p {
+    font-size: 14px;
+}
+
+button {
+    background-color: #C271FF;
+    color:#FFF;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 20px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    filter: drop-shadow(0 0 0.4rem black);
+    height: 50px;
+    width: 170px;
+}
+
+.faq {
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.faq h1 {
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.faq .faq-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.faq-answer {
+    max-width: 350px;
+    margin-bottom: 60px;
+}
+
+.faq-answer h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0 30px 0;
+}
+
+.faq-answer p {
+    font-size: 14px;
+    opacity: 0.4;
+    line-height: 1.7;
+}
+
+footer {
+    background-color: #071629;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 0;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+footer p {
+    font-size: 12px;
+    opacity: 0.3;
+    color: #FFF;
+    text-align: center;
+    padding-bottom: 40px;
+}
