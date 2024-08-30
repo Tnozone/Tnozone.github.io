@@ -5,7 +5,7 @@ Hello, I'm Maxime Nocquet. I'm a final-year Software Engineering student at [Hol
 ## Portfolio
 
 ### The-Maze
-![Game image](Maze.png?raw=true "Game image")
+![Game image](../Images/Maze.png?raw=true "Game image")
 A level done in raytracing reminiscent of retro games like Doom.
 [link](https://github.com/Tnozone/The-Maze/blob/main/README.md)
 
