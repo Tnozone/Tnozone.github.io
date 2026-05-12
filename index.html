@@ -37,18 +37,23 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About me</span></a></li>
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span data-i18n="home_link">Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span data-i18n="about_link">About me</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span data-i18n="skill_link">Skills</span></a></li>
+	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span data-i18n="project_link">Projects</span></a></li>
 	          <!-- <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> -->
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
+
+	  <!-- Language toggle -->
+	  <button class="btnlanguage" onclick="setLanguage('en')">EN</button>
+	<button class="btnlanguage" onclick="setLanguage('fr')">FR</button>
+
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	      <div class="slider-item ">
@@ -60,9 +65,9 @@
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Maxime Nocquet / Tnozone</span></h1>
-			            <h2 class="mb-4">I am a Junior Full Stack Developer</h2>
+		          		<span class="subheading" data-i18n="intro_hello">Hello!</span>
+			            <h1 class="mb-4 mt-3"><span style="color:white;" data-i18n="intro_name">I'm </span><span>Maxime Nocquet / Tnozone</span></h1>
+			            <h2 class="mb-4" data-i18n="intro_title">I am a Junior Full Stack Developer</h2>
 		            </div>
 		          </div>
 	        	</div>
@@ -78,8 +83,8 @@
 	          	</div>
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm a <span>Software Engineer Student</span> based in Paris</h1>
+		          		<span class="subheading" data-i18n="intro_hello">Hello!</span>
+			            <h1 class="mb-4 mt-3"><span style="color:white;" data-i18n="intro_slide1">I'm a </span><span data-i18n="intro_slide2">Software Engineer</span><span style="color:white;" data-i18n="intro_slide3"> based in Paris</span></h1>
           </div>
 		          </div>
 	        	</div>
@@ -101,21 +106,21 @@
 				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							<p>
+							<h1 class="big" data-i18n="about_title">About</h1>
+							<h2 class="mb-4" data-i18n="about_intro">About Me</h2>
+							<p data-i18n="about_text1">
 								As a former designer and animator, I have an eye for details and the skills to design a good-looking page. I can apply my knowledge to elevate my web-development skills.
 							</p>
-							<p>
+							<p data-i18n="about_text2">
 								Today, I am transitioning into a career as a software engineer, with a particular interest in full-stack development. I am undergoing intensive training in technologies such as Python, JavaScript, React, and Node.js, and I am driven to apply these skills to solve real-world problems and innovate.
 							</p>
-							<p>
+							<p data-i18n="about_text3">
 								I endeavor to do good work in this field, and I wish to expand my professional career as a Software Engineer.
 							</p>
 
 							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>TNOZONE</span></li>
-								<li class="d-flex"><span>Address:</span> <span>Paris, FRANCE</span></li>
+								<li class="d-flex"><span data-i18n="name">Name:</span> <span>TNOZONE</span></li>
+								<li class="d-flex"><span data-i18n="adress">Address:</span> <span>Paris, FRANCE</span></li>
 								<li class="d-flex"><span>Email:</span> <span>maxnocquet@gmail.com</span></li>
 							</ul>
 
@@ -125,7 +130,7 @@
 						<div class="text">
 							<p class="mb-4">
 								<span class="number" data-number="32">32</span>
-								<span>Github repositories</span>
+								<span data-i18n="github_repo">Github repositories</span>
 							</p>
 							</div>
 					</div>
@@ -147,12 +152,12 @@
             <div class="row justify-content-center">
                 <!-- Link to View Resume Online -->
                 <div class="col-md-6 text-center ftco-animate">
-                    <p><a href="resume.html" class="btn btn-primary py-4 px-5">View Resume Online</a></p>
+                    <p><a href="resume.html" class="btn btn-primary py-4 px-5" data-i18n="resume_view">View Resume Online</a></p>
                 </div>
 
                 <!-- Link to Download Resume PDF -->
                 <div class="col-md-6 text-center ftco-animate">
-                    <p><a href="resume.pdf" class="btn btn-primary py-4 px-5" download>Download Resume (PDF)</a></p>
+                    <p><a href="resume.pdf" class="btn btn-primary py-4 px-5 data-i18n=resume_download" download>Download Resume (PDF)</a></p>
                 </div>
             </div>
     
@@ -160,15 +165,15 @@
                 <div class="col-md-6">
                     <div class="resume-wrap ftco-animate">
                         <span class="date">2024 - 2025</span>
-                        <h2>Full Stack Specialization</h2>
+                        <h2 data-i18n="specialization">Full Stack Specialization</h2>
                         <span class="position">Holberton School</span>
-                        <p class="mt-4">Frontend and Backend Projects.</p>
+                        <p class="mt-4" data-i18n="specialization_projects">Frontend and Backend Projects.</p>
                     </div>
                     <div class="resume-wrap ftco-animate">
                         <span class="date">2022 - 2023</span>
-                        <h2>Certificate of Completion</h2>
+                        <h2 data-i18n="certificate">Certificate of Completion</h2>
                         <span class="position">Holberton School</span>
-                        <p class="mt-4">Foundations of Computer Science</p>
+                        <p class="mt-4" data-i18n="certificate_detail">Foundations of Computer Science</p>
                     </div>
                 </div>
             </div>
@@ -206,7 +211,7 @@
 								<i class="flaticon-flasks"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Web applications</h3>
+								<h3 class="mb-5" data-i18n="web_app">Web applications</h3>
 							</div>
 						</div>
 					</div>
@@ -216,7 +221,7 @@
 								<i class="flaticon-ideas"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Web mobile applications</h3>
+								<h3 class="mb-5" data-i18n="web_app_mobile">Web mobile applications</h3>
 							</div>
 						</div>
 					</div>
@@ -227,7 +232,7 @@
 								<i class="flaticon-analysis"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">App Developing</h3>
+								<h3 class="mb-5" data-i18n="app_dev">App Developing</h3>
 							</div>
 						</div>
 					</div>
@@ -247,7 +252,7 @@
 								<i class="flaticon-flasks"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Others services</h3>
+								<h3 class="mb-5" data-i18n="other_services">Others services</h3>
 							</div>
 						</div>
 					</div>
@@ -258,8 +263,8 @@
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Skills</h1>
-            <h2 class="mb-4">My Skills</h2>
+          	<h1 class="big big-2" data-i18n="skill_link">Skills</h1>
+            <h2 class="mb-4" data-i18n="skills_title">My Skills</h2>
           </div>
         </div>
 				<div class="row">
@@ -359,8 +364,8 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">My Projects</h2>
+          	<h1 class="big big-2" data-i18n="project_link">Projects</h1>
+            <h2 class="mb-4" data-i18n="project_title">My Projects</h2>
           </div>
         </div>
     		<div class="row">
@@ -369,7 +374,7 @@
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
 	    					<h3><a href="https://github.com/Tnozone/The-Maze">The Maze</a></h3>
-	    					<span>OpenGL Project<br/>Game Level</span>
+	    					<span data-i18n="maze1">OpenGL Project</span><br/><span data-i18n="maze2">Game Level</span>
 	    				</div>
     				</div>
   				</div>
@@ -378,7 +383,7 @@
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
 	    					<h3><a href="https://github.com/Tnozone/Zoneimage">Zoneimages</a></h3>
-	    					<span>React Project<br/>Image editing website</span>
+	    					<span data-i18n="zoneimages1">React Project</span><br/><span data-i18n="zoneimages2">Image editing website</span>
 	    				</div>
     				</div>
   				</div>
@@ -457,7 +462,7 @@
             <div class="block-18">
               <div class="text">
                 <strong class="number" data-number="34">0</strong>
-                <span>Repositories</span>
+                <span data-i18n="repos">Repositories</span>
               </div>
             </div>
           </div>
@@ -465,7 +470,7 @@
             <div class="block-18">
               <div class="text">
                 <strong class="number" data-number="2500">0</strong>
-                <span>Contributions on Github</span>
+                <span data-i18n="contributions">Contributions on Github</span>
               </div>
             </div>
           </div>
@@ -473,7 +478,7 @@
             <div class="block-18">
               <div class="text">
                 <strong class="number" data-number="1.530">0</strong>
-                <span>Views</span>
+                <span data-i18n="views">Views</span>
               </div>
             </div>
           </div>
@@ -493,7 +498,7 @@
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
+            <h2 class="mb-4" data-i18n="contact">Contact Me</h2>
           </div>
         </div>
         <div class="row d-flex contact-info mb-5">
@@ -502,7 +507,7 @@
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-map-signs"></span>
           		</div>
-          		<h3 class="mb-4">Address</h3>
+          		<h3 class="mb-4" data-i18n="contact_adress">Address</h3>
 	            <p> 92380 Garches, FRANCE</p>
 	          </div>
           </div>
@@ -511,7 +516,7 @@
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-phone2"></span>
           		</div>
-          		<h3 class="mb-4">Contact Number</h3>
+          		<h3 class="mb-4" data-i18n="contact_number">Contact Number</h3>
 	            <p><a href="tel://1234567920">+33 6 82 63 00 67</a></p>
 	          </div>
           </div>
@@ -520,7 +525,7 @@
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-paper-plane"></span>
           		</div>
-          		<h3 class="mb-4">Email Address</h3>
+          		<h3 class="mb-4" data-i18n="contact_mail">Email Address</h3>
 	            <p><a href="mailto:info@yoursite.com">maxnocquet@gmail.com</a></p>
 	          </div>
           </div>
@@ -529,8 +534,8 @@
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
-				  <h3 class="mb-4">Website</h3>
-				  <p><a href="https://github.com/Tnozone">Tnozone's GitHub</a></p>
+				  <h3 class="mb-4" data-i18n="contact_website">Website</h3>
+				  <p><a href="https://github.com/Tnozone" data-i18n="website_link">Tnozone's GitHub</a></p>
 	          </div>
           </div>
         </div>
@@ -570,7 +575,7 @@
 		  <div class="row mb-5">
 			<div class="col-md">
 			  <div class="ftco-footer-widget mb-4">
-				<h2 class="ftco-heading-2">About</h2>
+				<h2 class="ftco-heading-2" data-i18n="about_link">About</h2>
 				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
 				  <li class="ftco-animate">
 					</a>
@@ -584,12 +589,12 @@
 	  
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
+              <h2 class="ftco-heading-2" data-i18n="links">Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span><span data-i18n="home_link">Home</span></a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span><span data-i18n="about_link">About</span></a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span><span data-i18n="project_link">Projects</span></a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
               </ul>
             </div>
@@ -598,17 +603,17 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span> <span data-i18n="web_design">Web Design</span></a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span> <span data-i18n="web_dev">Web Development</span></a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span> <span data-i18n="business_strat">Business Strategy</span></a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span> <span data-i18n="data_analysis">Data Analysis</span></a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span> <span data-i18n="graphic_design">Graphic Design</span></a></li>
               </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Question?</h2>
+            	<h2 class="ftco-heading-2" data-i18n="question">Have a Question?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Paris, FRANCE</span></li>

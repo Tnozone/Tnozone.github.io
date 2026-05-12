@@ -40,8 +40,6 @@
 	// Scrollax
    $.Scrollax();
 
-
-
    // Burger Menu
 	var burgerMenu = function() {
 
@@ -275,3 +273,122 @@
 
 })(jQuery);
 
+// language toggle
+const translations = {
+	en: {
+		home_link: "Home",
+		about_link: "About me",
+		skill_link: "Skill",
+		project_link: "Projects",
+		intro_hello: "Hello!",
+		intro_name: "I'm ",
+		intro_title: "I am a Junior Full Stack Developer",
+		intro_slide1: "I'm a ",
+		intro_slide2: "Software Engineer",
+		intro_slide3: " based in Paris",
+		about_title: "About",
+		about_intro: "About Me",
+		about_text1: "As a former designer and animator, I have an eye for details and the skills to design a good-looking page. I can apply my knowledge to elevate my web-development skills.",
+		about_text2: "Today, I am transitioning into a career as a software engineer, with a particular interest in full-stack development. I am undergoing intensive training in technologies such as Python, JavaScript, React, and Node.js, and I am driven to apply these skills to solve real-world problems and innovate.",
+		about_text3: "I endeavor to do good work in this field, and I wish to expand my professional career as a Software Engineer.",
+		name: "Name:",
+		adress: "Adress:",
+		github_repo: "Github repositories",
+		resume_view: "View Resume Online",
+		resume_download: "Dowload Resume (PDF)",
+		specialization: "Full Stack Specialization",
+		specialization_projects: "Frontend and Backend Projects.",
+		certificate: "Certificate of Completion",
+		certificate_detail: "Foundations of Computer Science",
+		web_app: "Web applications",
+		web_app_mobile: "Web mobile applications",
+		app_dev: "App Developing",
+		other_services: "Others services",
+		skills_title: "My Skills",
+		project_title: "My Projects",
+		repos: "Repositories",
+		contributions: "Contributions on Github",
+		views: "Views",
+		contact: "Contact Me",
+		contact_adress: "Adress",
+		contact_number: "Contact Number",
+		contact_mail: "Email Adress",
+		contact_website: "Website",
+		website_link: "Tnozone's Github",
+		links: "Links",
+		web_design: "Web Design",
+		web_dev: "Web Development",
+		business_strat: "Business Strategy",
+		data_analysis: "Data Analysis",
+		graphic_design: "Graphic Design",
+		question: "Have a Question?",
+		maze1: "OpenGL Project",
+		maze2: "Game Level",
+		zoneimages1: "React Project",
+		zoneimages2: "Image editing website"
+	},
+	fr: {
+		home_link: "Accueil",
+		about_link: "À propos",
+		skill_link: "Compétences",
+		project_link: "Projets",
+		intro_hello: "Bonjour!",
+		intro_name: "Je suis ",
+		intro_title: "Je suis un Développeur Junior Full Stack",
+		intro_slide1: "Je suis ",
+		intro_slide2: "Ingénieur Logiciel",
+		intro_slide3: " basé à Paris",
+		about_title: "À Propos",
+		about_intro: "À Propos de moi",
+		about_text1: "En tant qu'ancien designer et animateur, j'ai un œil pour les détails et les compétences nécessaires pour concevoir une page attrayante. Je peux appliquer mes connaissances pour améliorer mes compétences en développement web.",
+		about_text2: "Aujourd'hui, je me dirige vers une carrière d'ingénieur logiciel, avec un intérêt particulier pour le développement full-stack. Je suis une formation intensive dans des technologies telles que Python, JavaScript, React et Node.js, et je suis motivé à appliquer ces compétences pour résoudre des problèmes concrets et innover.",
+		about_text3: "Je m'efforce de bien faire dans ce domaine et je souhaite développer ma carrière professionnelle en tant qu'Ingénieur Logiciel.",
+		name: "Nom:",
+		adress: "Adresse:",
+		github_repo: "Repositoires Github",
+		resume_view: "Voir Resume en ligne",
+		resume_download: "Télécharger Resume (PDF)",
+		specialization: "Spécialisation Full Stack",
+		specialization_projects: "Projets Frontend et Backend.",
+		certificate: "Certificat de Complétion",
+		certificate_detail: "Fondements de l'Informatique",
+		web_app: "Applications web",
+		web_app_mobile: "Applications web mobile",
+		app_dev: "Développement App",
+		other_services: "Autres services",
+		skills_title: "Mes Compétences",
+		project_title: "Mes Projets",
+		repos: "Repositoires",
+		contributions: "Contributions sur Github",
+		views: "Vues",
+		contact: "Contactez-Moi",
+		contact_adress: "Adresse",
+		contact_number: "Numéro de Contact",
+		contact_mail: "Adresse Email",
+		contact_website: "Site Web",
+		website_link: "Github de Tnozone",
+		links: "Liens",
+		web_design: "Design Web",
+		web_dev: "Développement Web",
+		business_strat: "Stratégie d'Entreprise",
+		data_analysis: "Analyse des Données",
+		graphic_design: "Design Graphique",
+		question: "Une Question?",
+		maze1: "Projet OpenGL",
+		maze2: "Niveau de Jeux",
+		zoneimages1: "Projet React",
+		zoneimages2: "Site d'édition d'images"
+	}
+};
+
+function setLanguage(lang) {
+	localStorage.setItem("lang", lang);
+
+	document.querySelectorAll("[data-i18n]").forEach(el => {
+		const key = el.dataset.i18n;
+		el.textContent = translations[lang][key];
+	});
+}
+
+// Load saved language
+setLanguage(localStorage.getItem("lang") || "en");

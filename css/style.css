@@ -8628,6 +8628,10 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
 
+.btnlanguage {
+  position: relative;
+  z-index: 9999;
+}
 .hero-wrap {
   width: 100%;
   height: 100%;
